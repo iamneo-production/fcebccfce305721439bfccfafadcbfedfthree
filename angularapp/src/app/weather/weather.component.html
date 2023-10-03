@@ -1,0 +1,32 @@
+<div class="weather-container">
+    <div class="app-header">
+      <h1 class="app-title">Weather Forecast</h1>
+    </div>
+  
+    <!-- Date display container -->
+    <div class="date-container">
+      <div class="month">{{ currentDate | date: 'MMMM' }}</div>
+      <div class="date">{{ currentDate | date: 'd' }}</div>
+      <div class="day">{{ currentDate | date: 'EEEE' }}</div>
+    </div>
+  
+    <div class="search-form">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Enter city name"
+        [(ngModel)]="cityName"
+        name="cityName"
+      />
+      <button class="search-button" (click)="searchCityWeather()">Search</button>
+    </div>
+
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  
+    <div *ngIf="weatherData" class="weather-card">
+      <div class="location">{{ weatherData.name }}, {{ weatherData.sys.country }}</div>
+      <div class="temperature">{{ weatherData.main.temp * 0.1 | number:'1.2-2' }}°C</div>
+      <div class="weather-description">{{ weatherData.weather[0].description }}</div>
+    </div>
+  </div>
+  

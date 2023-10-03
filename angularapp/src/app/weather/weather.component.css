@@ -1,0 +1,132 @@
+.weather-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background-image: url('../assets/weatherpic.jpg');  */
+    background-image: url('../../assets/weatherpic.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .app-header {
+    margin-bottom: 20px;
+  }
+  
+  .app-title {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    border-radius: 0;
+    outline: none;
+    margin-right: 10px;
+    width: 200px;
+    transition: border-color 0.3s;
+  }
+  
+  .search-input::placeholder {
+    color: #999;
+  }
+  
+  .search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .weather-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .location {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .temperature {
+    font-size: 48px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .weather-description {
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+  }
+  /* Style for the date container */
+.date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 123, 255, 0.1); /* Background color for the date container */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the month */
+  .month {
+    font-size: 24px;
+    color: #151618; /* Text color for the month */
+    margin-bottom: 5px;
+  }
+  
+  /* Style for the date */
+  .date {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Text color for the date */
+    margin-bottom: 5px;
+  }
+  
+  /* Style for the day */
+  .day {
+    font-size: 20px;
+    color: #555; /* Text color for the day */
+  }
+  
+  .error-message{
+    color: #fe4444;
+    font-size: 17px;
+    font-weight: 500;
+  }
