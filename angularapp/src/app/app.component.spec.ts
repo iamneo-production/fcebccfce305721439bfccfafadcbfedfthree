@@ -8,7 +8,7 @@ describe('AppComponent', () => {
     declarations: [AppComponent]
   }));
 
-  it('should have title as WeatherApp', () => {
+  it('should have title as Weather App', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('Weather App');

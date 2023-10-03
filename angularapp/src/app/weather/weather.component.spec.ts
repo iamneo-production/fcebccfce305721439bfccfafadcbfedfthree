@@ -38,6 +38,7 @@ describe('WeatherComponent', () => {
   it('should display the current date', () => {
     const currentDate = new Date();
     component.currentDate = currentDate;
+    // fixture.detectChanges();
     const dateContainer: HTMLElement = fixture.nativeElement.querySelector('.date-container');
     expect(dateContainer.textContent);
   });
